@@ -92,3 +92,48 @@ p {
     height: 140px;
     width: 140px;
 }
+
+.venus {
+    height: 40px;
+    width: 40px;
+    background-image: url(assets/venus.png);
+    background-size: 100%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: absolute;
+    box-shadow: -4px 2px 40px #f9c05f;
+    top: 40%;
+    left: 42%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    animation: orbit3 2s linear infinite;
+    -webkit-animation: orbit3 10s linear infinite;
+}
+
+@keyframes orbit3 {
+    from {
+        transform: rotate(0deg) translateX(100px) rotate(0deg);
+        -webkit-transform: rotate(0deg) translateX(100px) rotate(0deg);
+        -moz-transform: rotate(0deg) translateX(100px) rotate(0deg);
+        -ms-transform: rotate(0deg) translateX(100px) rotate(0deg);
+        -o-transform: rotate(0deg) translateX(100px) rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg) translateX(100px) rotate(-360deg);
+        -webkit-transform: rotate(360deg) translateX(100px) rotate(-360deg);
+        -moz-transform: rotate(360deg) translateX(100px) rotate(-360deg);
+        -ms-transform: rotate(360deg) translateX(100px) rotate(-360deg);
+        -o-transform: rotate(360deg) translateX(100px) rotate(-360deg);
+    }
+}
+
+.venus-outline-1 {
+    height: 200px;
+    width: 200px;
+}
