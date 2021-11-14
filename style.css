@@ -72,10 +72,10 @@ p {
     font-family: system-ui;
     position: absolute;
     left: -62px;
-    top: -20px;
+    top: -15px;
 }
 
-.mercury-outline, .venus-outline-1, .eath-outline-1, .mars-outline, .jupiter-outline-1, .saturn-outline-1, .uranus-outline-1, .neptune-outline-1 {
+.mercury-outline, .venus-outline-1, .earth-outline-1, .mars-outline, .jupiter-outline-1, .saturn-outline-1, .uranus-outline-1, .neptune-outline-1 {
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -136,4 +136,97 @@ p {
 .venus-outline-1 {
     height: 200px;
     width: 200px;
+}
+
+.earth {
+    height: 50px;
+    width: 50px;
+    background-image: url(assets/earth.gif);
+    background-size: 100%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: absolute;
+    box-shadow: -4px 2px 40px #39a4fc;
+    top: 44%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    animation: orbit4 20s linear infinite;
+    -webkit-animation: orbit4 20s linear infinite;
+}
+
+@keyframes orbit4 {
+    from {
+        transform: rotate(0deg) translateX(150px) rotate(0deg);
+        -webkit-transform: rotate(0deg) translateX(150px) rotate(0deg);
+        -moz-transform: rotate(0deg) translateX(150px) rotate(0deg);
+        -ms-transform: rotate(0deg) translateX(150px) rotate(0deg);
+        -o-transform: rotate(0deg) translateX(150px) rotate(0deg);
+}
+    to {
+        transform: rotate(360deg) translateX(150px) rotate(-360deg);
+        -webkit-transform: rotate(360deg) translateX(150px) rotate(-360deg);
+        -moz-transform: rotate(360deg) translateX(150px) rotate(-360deg);
+        -ms-transform: rotate(360deg) translateX(150px) rotate(-360deg);
+        -o-transform: rotate(360deg) translateX(150px) rotate(-360deg);
+    }
+}
+
+.earth-outline-1 {
+    height: 300px;
+    width: 300px;
+}
+
+.earth-circle {
+    height: 65px;
+    width: 65px;
+    border: 1px dotted #fff;
+    position: relative;
+    left: -8px;
+    top: -8px;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+
+.earth-inner {
+    height: 15px;
+    width: 15px;
+    background-image: url(assets/moon.gif);
+    background-size: 100%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    left: 45%;
+    top: 45%;
+    animation: orbit5 3s linear infinite;
+    -webkit-animation: orbit5 3s linear infinite;
+}
+
+@keyframes orbit5 {
+    from {
+        transform: rotate(0deg) translateX(35px) rotate(0deg);
+        -webkit-transform: rotate(0deg) translateX(35px) rotate(0deg);
+        -moz-transform: rotate(0deg) translateX(35px) rotate(0deg);
+        -ms-transform: rotate(0deg) translateX(35px) rotate(0deg);
+        -o-transform: rotate(0deg) translateX(35px) rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg) translateX(35px) rotate(-360deg);
+        -webkit-transform: rotate(360deg) translateX(35px) rotate(-360deg);
+        -moz-transform: rotate(360deg) translateX(35px) rotate(-360deg);
+        -ms-transform: rotate(360deg) translateX(35px) rotate(-360deg);
+        -o-transform: rotate(360deg) translateX(35px) rotate(-360deg);
+    }
 }
