@@ -275,3 +275,48 @@ p {
     height: 400px;
     width: 400px;
 }
+
+.jupiter {
+    height: 65px;
+    width: 65px;
+    background-image: url(assets/jupiter.gif);
+    background-size: 100%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: absolute;
+    box-shadow: -4px 2px 40px #ffce46;
+    top: 45%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    animation: orbit-jupiter 60s linear infinite;
+    -webkit-animation: orbit-jupiter 60s linear infinite;
+}
+
+@keyframes orbit-jupiter {
+    from {
+        transform: rotate(0deg) translateX(265px) rotate(0deg);
+        -webkit-transform: rotate(0deg) translateX(265px) rotate(0deg);
+        -moz-transform: rotate(0deg) translateX(265px) rotate(0deg);
+        -ms-transform: rotate(0deg) translateX(265px) rotate(0deg);
+        -o-transform: rotate(0deg) translateX(265px) rotate(0deg);
+}
+    to {
+        transform: rotate(360deg) translateX(265px) rotate(-360deg);
+        -webkit-transform: rotate(360deg) translateX(265px) rotate(-360deg);
+        -moz-transform: rotate(360deg) translateX(265px) rotate(-360deg);
+        -ms-transform: rotate(360deg) translateX(265px) rotate(-360deg);
+        -o-transform: rotate(360deg) translateX(265px) rotate(-360deg);
+}
+}
+
+.jupiter-outline-1 {
+    height: 530px;
+    width: 530px;
+}
