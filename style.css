@@ -29,8 +29,8 @@ body {
 .mercury {
     height: 20px;
     width: 20px;
-    /* background: radial-gradient(circle, #807a72 40%, #68696d 75%); */
-    background-image: url(assets/mercury.png);
+    /*background: radial-gradient(circle, #807a72 40%, #68696d 75%);
+    */background-image: url(assets/mercury.gif);
     background-size: 100%;
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -46,11 +46,11 @@ body {
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
-    animation: orbit2 2s linear infinite;
-    -webkit-animation: orbit2 2s linear infinite;
+    animation: orbit-mercury 2s linear infinite;
+    -webkit-animation: orbit-mercury 2s linear infinite;
 }
 
-@keyframes orbit2 {
+@keyframes orbit-mercury {
     from { 
         transform: rotate(0deg) translateX(70px) rotate(0deg);
         -webkit-transform: rotate(0deg) translateX(70px) rotate(0deg); 
@@ -96,7 +96,7 @@ p {
 .venus {
     height: 40px;
     width: 40px;
-    background-image: url(assets/venus.png);
+    background-image: url(assets/venus.gif);
     background-size: 100%;
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -112,11 +112,11 @@ p {
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
-    animation: orbit3 2s linear infinite;
-    -webkit-animation: orbit3 10s linear infinite;
+    animation: orbit-venus 10s linear infinite;
+    -webkit-animation: orbit-venus 10s linear infinite;
 }
 
-@keyframes orbit3 {
+@keyframes orbit-venus {
     from {
         transform: rotate(0deg) translateX(100px) rotate(0deg);
         -webkit-transform: rotate(0deg) translateX(100px) rotate(0deg);
@@ -157,11 +157,11 @@ p {
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
-    animation: orbit4 20s linear infinite;
-    -webkit-animation: orbit4 20s linear infinite;
+    animation: orbit-earth 20s linear infinite;
+    -webkit-animation: orbit-earth 20s linear infinite;
 }
 
-@keyframes orbit4 {
+@keyframes orbit-earth {
     from {
         transform: rotate(0deg) translateX(150px) rotate(0deg);
         -webkit-transform: rotate(0deg) translateX(150px) rotate(0deg);
@@ -210,11 +210,11 @@ p {
     -o-transform: translate(-50%, -50%);
     left: 45%;
     top: 45%;
-    animation: orbit5 3s linear infinite;
-    -webkit-animation: orbit5 3s linear infinite;
+    animation: orbit-earth-moon 3s linear infinite;
+    -webkit-animation: orbit-earth-moon 3s linear infinite;
 }
 
-@keyframes orbit5 {
+@keyframes orbit-earth-moon {
     from {
         transform: rotate(0deg) translateX(35px) rotate(0deg);
         -webkit-transform: rotate(0deg) translateX(35px) rotate(0deg);
