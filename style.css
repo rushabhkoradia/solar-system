@@ -322,21 +322,21 @@ p {
 }
 
 .saturn {
-    height: 100px;
-    width: 100px;
+    height: 110px;
+    width: 110px;
     background-image: url(assets/saturn.gif);
     background-repeat: no-repeat;
     background-size: 100%;
     position: absolute;
     top: 46.5%;
-    left: 43.5%;
+    left: 42.5%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
-    animation: orbit-saturn 90s linear infinite;
-    -webkit-animation: orbit-saturn 90s linear infinite;
+    animation: orbit-saturn 100s linear infinite;
+    -webkit-animation: orbit-saturn 100s linear infinite;
 }
 
 @keyframes orbit-saturn {
@@ -375,8 +375,8 @@ p {
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
-    animation: orbit-uranus 120s linear infinite;
-    -webkit-animation: orbit-uranus 120s linear infinite;
+    animation: orbit-uranus 180s linear infinite;
+    -webkit-animation: orbit-uranus 180s linear infinite;
 }
 
 @keyframes orbit-uranus {
@@ -399,4 +399,49 @@ p {
 .uranus-outline-1 {
     height: 870px;
     width: 870px;
+}
+
+.neptune {
+    height: 40px;
+    width: 40px;
+    background-image: url(assets/neptune.gif);
+    background-size: 100%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: absolute;
+    box-shadow: -1px 2px 15px #33c4fd;
+    top: 48%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    animation: orbit-neptune 250s linear infinite;
+    -webkit-animation: orbit-neptune 250s linear infinite;
+}
+
+@keyframes orbit-neptune {
+    from {
+        transform: rotate(0deg) translateX(500px) rotate(0deg);
+        -webkit-transform: rotate(0deg) translateX(500px) rotate(0deg);
+        -moz-transform: rotate(0deg) translateX(500px) rotate(0deg);
+        -ms-transform: rotate(0deg) translateX(500px) rotate(0deg);
+        -o-transform: rotate(0deg) translateX(500px) rotate(0deg);
+}
+    to {
+        transform: rotate(360deg) translateX(500px) rotate(-360deg);
+        -webkit-transform: rotate(360deg) translateX(500px) rotate(-360deg);
+        -moz-transform: rotate(360deg) translateX(500px) rotate(-360deg);
+        -ms-transform: rotate(360deg) translateX(500px) rotate(-360deg);
+        -o-transform: rotate(360deg) translateX(500px) rotate(-360deg);
+}
+}
+
+.neptune-outline-1 {
+    height: 1000px;
+    width: 1000px;
 }
