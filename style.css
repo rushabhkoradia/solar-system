@@ -329,14 +329,14 @@ p {
     background-size: 100%;
     position: absolute;
     top: 46.5%;
-    left: 42.5%;
+    left: 43.5%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
-    animation: orbit-saturn 12s linear infinite;
-    -webkit-animation: orbit-saturn 12s linear infinite;
+    animation: orbit-saturn 90s linear infinite;
+    -webkit-animation: orbit-saturn 90s linear infinite;
 }
 
 @keyframes orbit-saturn {
@@ -359,4 +359,44 @@ p {
 .saturn-outline-1 {
     height: 700px;
     width: 700px;
+}
+
+.uranus {
+    height: 100px;
+    width: 100px;
+    background-image: url(assets/uranus.gif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 47%;
+    left: 44.5%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    animation: orbit-uranus 120s linear infinite;
+    -webkit-animation: orbit-uranus 120s linear infinite;
+}
+
+@keyframes orbit-uranus {
+    from {
+        transform: rotate(0deg) translateX(435px) rotate(0deg);
+        -webkit-transform: rotate(0deg) translateX(435px) rotate(0deg);
+        -moz-transform: rotate(0deg) translateX(435px) rotate(0deg);
+        -ms-transform: rotate(0deg) translateX(435px) rotate(0deg);
+        -o-transform: rotate(0deg) translateX(435px) rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg) translateX(435px) rotate(-360deg);
+        -webkit-transform: rotate(360deg) translateX(435px) rotate(-360deg);
+        -moz-transform: rotate(360deg) translateX(435px) rotate(-360deg);
+        -ms-transform: rotate(360deg) translateX(435px) rotate(-360deg);
+        -o-transform: rotate(360deg) translateX(435px) rotate(-360deg);
+    }
+}
+
+.uranus-outline-1 {
+    height: 870px;
+    width: 870px;
 }
